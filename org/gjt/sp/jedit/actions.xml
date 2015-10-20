@@ -1418,6 +1418,24 @@
 	</IS_SELECTED>
 </ACTION>
 
+<ACTION NAME="toggle-vertical">
+	<CODE>
+		textArea.toggleVerticalScrollbar();
+	</CODE>
+	<IS_SELECTED>
+		return textArea.isVerticalScrollbarVisible();
+	</IS_SELECTED>
+</ACTION>
+
+<ACTION NAME="toggle-horizontal">
+	<CODE>
+		textArea.toggleHorizontalScrollbar();
+	</CODE>
+	<IS_SELECTED>
+		return textArea.isHorizontalScrollbarVisible();
+	</IS_SELECTED>
+</ACTION>
+
 <ACTION NAME="toggle-line-numbers">
 	<CODE>
 		boolean shown = jEdit.getBooleanProperty("view.gutter.lineNumbers");

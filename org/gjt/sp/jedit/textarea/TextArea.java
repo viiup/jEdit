@@ -107,7 +107,6 @@ public abstract class TextArea extends JComponent
 		add(ScrollLayout.BOTTOM,
 			horizontal = new JScrollBar(Adjustable.HORIZONTAL));
 		horizontal.setRequestFocusEnabled(false);
-
 		horizontal.setValues(0,0,0,0);
 		//}}}
 
@@ -143,6 +142,38 @@ public abstract class TextArea extends JComponent
 		focusedComponent = this;
 
 		popupEnabled = true;
+	} //}}}
+
+	//{{{ toggleVerticalScrollbar() method
+	public void toggleVerticalScrollbar()
+	{
+		if (vertical.isVisible()){
+			vertical.setVisible(false);
+		} else {
+			vertical.setVisible(true);
+		}
+	} //}}}
+
+	//{{{ isVerticalScrollbarVisible() method
+	public boolean isVerticalScrollbarVisible()
+	{
+		return vertical.isVisible();
+	} //}}}
+
+	//{{{ toggleHorizontalScrollbar() method
+	public void toggleHorizontalScrollbar()
+	{
+		if (horizontal.isVisible()){
+			horizontal.setVisible(false);
+		} else {
+			horizontal.setVisible(true);
+		}
+	} //}}}
+
+	//{{{ isHorizontalScrollbarVisible() method
+	public boolean isHorizontalScrollbarVisible()
+	{
+		return horizontal.isVisible();
 	} //}}}
 
 	//{{{ getFoldPainter() method

@@ -273,6 +273,8 @@ edit=undo \
      - \
      goto-line \
      - \
+     %toggle-scrollbars \
+     - \
      %text \
      %indent \
      %source
@@ -369,6 +371,14 @@ delete-paragraph.label=Delete $Paragraph
 format-paragraph.label=$Format Paragraph
 to-lower.label=To $Lower Case
 to-upper.label=To $Upper Case
+#}}}
+
+#{{{ Toggle Scrollbars menu
+toggle-scrollbars=toggle-vertical \
+     toggle-horizontal
+toggle-scrollbars.label=Toggle Scro$llbars
+toggle-vertical.label=Toggle $Vertical Scrollbar
+toggle-horizontal.label=Toggle $Horizontal Scrollbar
 #}}}
 
 #{{{ Indent menu
