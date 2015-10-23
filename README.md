@@ -39,7 +39,7 @@ After Using the toggle option in the menu, Scrollbars are no longer visible (hid
 
 ![Change Request #2 Class Diagram](https://github.com/alamtx/jEdit/blob/master/jEdit_Docs/jEdit_cd2.png)
 ---
-#### Change Request #3
+
 
 
 ---
