@@ -26,13 +26,21 @@ package org.gjt.sp.jedit.io;
 //{{{ Imports
 import java.awt.Color;
 import java.io.*;
+import java.nio.file.Paths;
+
 import org.gjt.sp.jedit.*;
 import org.gjt.sp.jedit.browser.VFSBrowser;
 import org.gjt.sp.jedit.browser.FileCellRenderer;
 import org.gjt.sp.util.Log;
 import org.gjt.sp.util.IOUtilities;
 
+import javafx.scene.shape.Path;
+
 import javax.swing.*;
+
+import java.io.IOException;
+import java.nio.file.*;
+import java.nio.file.attribute.*;
 //}}}
 
 /**
@@ -450,9 +458,28 @@ public class VFSFile implements Serializable
 			else
 				return MiscUtilities.formatFileSize(getLength());
 		}
+		else if(name.equals(VFS.EA_CREATED))
+		{
+			return getCreationTime().toString();
+		}
 		else
 			return null;
 	} //}}}
+	
+	public FileTime getCreationTime()
+	{
+		FileTime creationTime = null;
+		File f = new File(path);
+		java.nio.file.Path p = f.toPath();
+	    try {
+			BasicFileAttributes a = Files.getFileAttributeView(p, BasicFileAttributeView.class).readAttributes();
+			creationTime = a.creationTime();
+		} catch (IOException e) {
+			e.printStackTrace();
+		}
+	    
+	    return creationTime;
+	}
 
 	//{{{ getColor() method
 	/**

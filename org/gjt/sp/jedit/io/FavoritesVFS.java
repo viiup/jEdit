@@ -195,7 +195,7 @@ public class FavoritesVFS extends VFS
 
 		public String getExtendedAttribute(String name)
 		{
-			if(name.equals(EA_TYPE))
+			if(name.equals(EA_TYPE) || name.equals(EA_CREATED))
 				return super.getExtendedAttribute(name);
 			else
 			{

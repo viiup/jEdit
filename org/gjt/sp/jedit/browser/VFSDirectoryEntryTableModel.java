@@ -461,6 +461,9 @@ vfs_attr_loop:	for(int i = 0; i < attrs.length; i++)
 					entry1.extension,
 					entry2.extension,
 					sortIgnoreCase);
+			// sort by creation date
+			else if(sortAttribute == VFS.EA_CREATED)
+				result = file1.getCreationTime().compareTo(file2.getCreationTime());
 			// default: sort by name
 			else
 				result = StandardUtilities.compareStrings(
