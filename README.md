@@ -1,4 +1,4 @@
-### SE6356 Assignment #1 - JEdit
+### SE6356 Assignment #1 - jEdit
 ##### Contributions by [Abdullah Moyeen](https://github.com/AbdullahMoyeen) & [Mahabubul Alam](https://github.com/alamtx)
 ---
 
