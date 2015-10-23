@@ -190,6 +190,11 @@ public abstract class VFS
 	 * @since jEdit 4.2pre1
 	 */
 	public static final String EA_MODIFIED = "modified";
+
+	/**
+	 * File creation date.
+	 */
+	public static final String EA_CREATED = "created";
 	//}}}
 
 	public static int IOBUFSIZE = 32678;

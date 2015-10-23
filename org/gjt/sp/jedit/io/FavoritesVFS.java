@@ -46,7 +46,7 @@ public class FavoritesVFS extends VFS
 	public FavoritesVFS()
 	{
 		super("favorites",DELETE_CAP | LOW_LATENCY_CAP,
-			new String[] { EA_TYPE });
+			new String[] { EA_TYPE, EA_CREATED });
 
 		/* addToFavorites(), which is a static method
 		 * (for convinience) needs an instance of the
