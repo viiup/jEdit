@@ -4,7 +4,7 @@
 
 ##### This repo contains - 
 * JEdit code updated with the change requests specified by [Dr. Andrian Marcus ](http://www.utdallas.edu/~amarcus/)
-* [Project Report](https://github.com/alamtx/jEdit/blob/master/Assignment1_report_jEdit.xlsx?raw=true) in Microsoft Excel format, using Dr. Marcus's template.
+* [Project Report](https://github.com/alamtx/jEdit/blob/master/Assignment1_report_jEdit.xlsx?raw=true) in Microsoft Excel format, using Dr. Marcus's template. The report for each change request is in a seperate "sheet" in the same "workbook".
 * [UML Class Diagrams and screenshots](https://github.com/alamtx/jEdit/blob/master/jEdit_Docs/jEdit_Docs_AlamMoyeen.zip?raw=true) pertaining to each change request.
 
 ---
