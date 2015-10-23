@@ -43,5 +43,5 @@ After Using the toggle option in the menu, Scrollbars are no longer visible (hid
 
 
 ---
-* The Assignment Description can be downloaded from [here]().
+* The Assignment Description can be downloaded from [here](https://github.com/alamtx/jEdit/blob/master/Assignment1_description.pdf?raw=true).
 * The JEdit source code that was used for the assignment can be downloaded from [here](https://utdallas.box.com/s/vtiy17c9uh5bbioeghzxevhnvje39knc).
