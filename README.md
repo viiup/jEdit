@@ -39,8 +39,14 @@ After Using the toggle option in the menu, Scrollbars are no longer visible (hid
 
 ![Change Request #2 Class Diagram](https://github.com/alamtx/jEdit/blob/master/jEdit_Docs/jEdit_cd2.png)
 ---
+#### Change Request #3
+Added "creation date" column to the List of columns in Edit favorites in jEdit and Implement sorting..:
 
+![Creattion Date & Sorting in Edit Favorites](https://github.com/alamtx/jEdit/blob/master/jEdit_Docs/jEditCR3.PNG)
 
+[Annotated UML Class diagram (partial)](https://github.com/alamtx/jEdit/blob/master/jEdit_Docs/jEdit_cd3.pdf?raw=true) with the classes that we visited as we performed change request #3:
+
+![Change Request #1 Class Diagram](https://github.com/alamtx/jEdit/blob/master/jEdit_Docs/jEdit_cd3.png)
 
 ---
 * The Assignment Description can be downloaded from [here](https://github.com/alamtx/jEdit/blob/master/Assignment1_description.pdf?raw=true).
