@@ -5324,18 +5324,7 @@ public abstract class TextArea extends JComponent {
 			Selection[] selections = getSelection();
 			for (int i = 0; i < selections.length; i++) {
 				Selection s = selections[i];
-				if (s instanceof Selection.Rect) {
-					Selection.Rect r = (Selection.Rect) s;
-					int startColumn = r.getStartColumn(buffer);
-					if (startColumn == r.getEndColumn(buffer)) {
-						if (!forward && startColumn == 0)
-							getToolkit().beep();
-						else
-							tallCaretDelete(r, forward);
-					} else
-						setSelectedText(s, null);
-				} else
-					setSelectedText(s, null);
+				s.delete(forward, this);
 			}
 		} else if (forward) {
 			if (caret == buffer.getLength()) {
@@ -5355,7 +5344,7 @@ public abstract class TextArea extends JComponent {
 	} // }}}
 
 	// {{{ tallCaretDelete() method
-	private void tallCaretDelete(Selection.Rect s, boolean forward) {
+	public void tallCaretDelete(Selection.Rect s, boolean forward) {
 		try {
 			buffer.beginCompoundEdit();
 

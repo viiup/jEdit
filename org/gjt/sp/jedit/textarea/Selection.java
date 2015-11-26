@@ -344,6 +344,10 @@ public abstract class Selection implements Cloneable
 			return changed;
 		} //}}}
 
+		public void delete(boolean forward, TextArea textArea) {
+			textArea.setSelectedText(this, null);
+		}
+
 		//}}}
 	} //}}}
 
@@ -760,6 +764,19 @@ public abstract class Selection implements Cloneable
 				return buffer.getLineStartOffset(line) + returnValue;
 		} //}}}
 
+		public void delete(boolean forward, TextArea textArea) {
+			int startColumn = this.getStartColumn(textArea.getBuffer());
+			if (startColumn == this.getEndColumn(textArea.getBuffer())) {
+				if (!forward && startColumn == 0)
+					textArea.getToolkit().beep();
+				else
+					textArea.tallCaretDelete(this, forward);
+			} else
+				textArea.setSelectedText(this, null);
+		}
+
 		//}}}
 	} //}}}
+
+	public abstract void delete(boolean forward, TextArea textArea);
 }
